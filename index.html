@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Penal ABCD</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!--  -->
+    <script src="./js/index.js"></script>
+</head>
+<body>
+
+    <!-- <div class="finalizado">
+        <button class="voltarFinalizado">Voltar</button>
+        <button class="copiarFinalizado">Copiar</button>
+        <p id="name2">Nome:</p>
+        <p id="cpf2">CPF:</p>
+        <p id="rg2">RG:</p>
+        <p id="artigos2">Artigos:</p>
+        <p id="pena">Pena:</p>
+        <p id="multa2">Multa:</p>
+    </div> -->
+
+    <div class="container">
+        <br>
+        <div class="CrimesTransito">
+            <p><strong>CRIMES DE TRÂNSITO</strong></p>
+            <table cellspacing="3">
+                <tr>
+                    <td> <!-- TH ou TD (th Negrito) -->
+                        <div class="transito" id="162">
+                            <p>Art. 162</p>
+                            <p>Dirigir sem habilitação</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="181">
+                            <p>Art. 181</p>
+                            <p>Estacionar em local proibido</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="244">
+                            <p>Art. 244</p>
+                            <p>Pilotar motocicleta sem o uso do capacete</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="102">
+                            <p>Art. 102</p>
+                            <p>Fuga</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="108">
+                            <p>Art. 108</p>
+                            <p>Direção Perigosa</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="165">
+                            <p>Art. 165</p>
+                            <p>Dirigir sob efeito de álcool e/ou drogas</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="transito" id="173">
+                            <p>Art. 173</p>
+                            <p>Disputar rachas e corrigas ilegais</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="50">
+                            <p>Art. 50</p>
+                            <p>Abandono de aeronave</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="54">
+                            <p>Art. 54</p>
+                            <p>Poluição Sonora</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="53">
+                            <p>Art. 53</p>
+                            <p>Pousar em local proibido</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="transito" id="65">
+                            <p>Art. 65</p>
+                            <p>Aeronave sem registro</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="Ccrime">
+            <br>
+            <p><strong>CRIMES</strong></p>
+            <table cellspacing="3">
+                <tr>
+                    <td> <!-- TH ou TD (th Negrito) -->
+                        <div class="crime" id="02">
+                            <p>Art. 02</p>
+                            <p>Uso de máscara</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="287">
+                            <p>Art. 287</p>
+                            <p>Apologia ao crime</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="342">
+                            <p>Art. 342</p>
+                            <p>Falso testemunho</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="92§1">
+                            <p>Art. 92§1</p>
+                            <p>Simulacro de arma de fogo</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="19">
+                            <p>Art. 19</p>
+                            <p>Porte ilegal de arma branca</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="331">
+                            <p>Art. 331</p>
+                            <p>Desacato</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="crime" id="330">
+                            <p>Art. 330</p>
+                            <p>Desobediência</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="171">
+                            <p>Art. 171</p>
+                            <p>Estelionato</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="158">
+                            <p>Art. 158</p>
+                            <p>Extorsão</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="299">
+                            <p>Art. 299</p>
+                            <p>Falsidade ideológica</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="298">
+                            <p>Art. 298</p>
+                            <p>Falsificação de documentos</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime" id="150">
+                            <p>Art. 150</p>
+                            <p>Invasão</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="crime" id="520">
+                            <p>Art. 520</p>
+                            <p>Multas pendentes</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="Ccrime01">
+            <br>
+            <p><p><strong>CRIMES DE NIVEL 01</strong></p></p>
+            <table cellspacing="3">
+                <tr>
+                    <td> <!-- TH ou TD (th Negrito) -->
+                        <div class="crime01" id="129">
+                            <p>Art. 129</p>
+                            <p>Lesão corporal</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime01" id="135">
+                            <p>Art. 135</p>
+                            <p>Omissão de socorro</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime01" id="139">
+                            <p>Art. 139</p>
+                            <p>Calunia, Difamação e Injúria</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime01" id="147">
+                            <p>Art. 147</p>
+                            <p>Ameaça</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime01" id="288">
+                            <p>Art. 288</p>
+                            <p>Associação criminosa</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime01" id="358">
+                            <p>Art. 358</p>
+                            <p>Obstrução de justiça</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="crime01" id="334">
+                            <p>Art. 334</p>
+                            <p>Contrabando</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime01" id="334§3">
+                            <p>Art. 334§3</p>
+                            <p>Descaminho</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime01" id="56">
+                            <p>Art. 56</p>
+                            <p>Danos a Terceiros/
+                                Patrimônio</p>
+                        </div>
+                    </td>
+            </table>
+        </div>
+
+        <div class="Ccrime02">
+            <br>
+            <p><strong>CRIMES DE NIVEL 02</strong></p>
+            <table cellspacing="3">
+                <tr>
+                    <td> <!-- TH ou TD (th Negrito) -->
+                        <div class="crime02" id="157">
+                            <p>Art. 157</p>
+                            <p>Roubo</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="157§2">
+                            <p>Art. 157§2</p>
+                            <p>Roubo a caixa eletrônico/
+                                registradora</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="157§3">
+                            <p>Art. 157§3</p>
+                            <p>Roubo a residência</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="157§4">
+                            <p>Art. 157§4</p>
+                            <p>Roubo a loja</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="180">
+                            <p>Art. 180</p>
+                            <p>Receptação</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="351">
+                            <p>Art. 351</p>
+                            <p>Fuga da prisão | Ajudar fugitivo da prisão</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="crime02" id="06">
+                            <p>Art. 06</p>
+                            <p>Abuso de autoridade</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="33">
+                            <p>Art. 33</p>
+                            <p>Tráfico de Drogas</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="289">
+                            <p>Art. 289</p>
+                            <p>Posse de dinheiro sujo</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="155">
+                            <p>Art. 155</p>
+                            <p>Furto</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="333">
+                            <p>Art. 333</p>
+                            <p>Tentativa de suborno</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime02" id="57">
+                            <p>Art. 57</p>
+                            <p>Posse ilegal de munições</p>
+                        </div>
+                    </td>
+            </table>
+        </div>
+
+        <div class="Ccrime03">
+            <br>
+            <p><strong>CRIMES DE NIVEL 03</strong></p>
+            <table cellspacing="3">
+                <tr>
+                    <td> <!-- TH ou TD (th Negrito) -->
+                        <div class="crime03" id="121§3">
+                            <p>Art. 121§3</p>
+                            <p>Homicidio Culposo</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime03" id="121§1">
+                            <p>Art. 121§1</p>
+                            <p>Homicidio Doloso</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime03" id="129§1">
+                            <p>Art. 129§1</p>
+                            <p>Tentativa de Homicidio</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime03" id="148">
+                            <p>Art. 148</p>
+                            <p>Sequestro</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime03" id="148§1">
+                            <p>Art. 148§1</p>
+                            <p>Extorsão mediante a sequestro</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime03" id="157§5">
+                            <p>Art. 157§5</p>
+                            <p>Latrocínio</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="crime03" id="59">
+                            <p>Art. 59</p>
+                            <p>Roubo a banco</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime03" id="60">
+                            <p>Art. 60</p>
+                            <p>Roubo joalheria</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime03" id="61">
+                            <p>Art. 61</p>
+                            <p>Vazamento de informações confidenciais</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crime03" id="18">
+                            <p>Art. 18</p>
+                            <p>Tráfico de Armas</p>
+                        </div>
+                    </td>
+            </table>
+        </div>
+
+        <div class="Carmamento">
+            <br>
+            <p><strong>PORTE DE ARMAMENTO E COLETE A PROVA DE BALAS</strong></p>
+            <table cellspacing="3">
+                <tr>
+                    <td> <!-- TH ou TD (th Negrito) -->
+                        <div class="crimeArmamento" id="14">
+                            <p>Art. 14</p>
+                            <p>Mal uso de arma de fogo COM PORTE</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crimeArmamento" id="16§1">
+                            <p>Art. 16§1</p>
+                            <p>Posse de arma exclusiva da polícia</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crimeArmamento" id="15">
+                            <p>Art. 15</p>
+                            <p>Posse ilegal de armas de baixo calibre (Pistola/SMG)</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="crimeArmamento" id="16">
+                            <p>Art. 16</p>
+                            <p>Posse ilegal de armas de alto calibre (Fuzil)</p>
+                        </div>
+                    </td>
+            </table>
+        </div>
+
+        <br>
+    </div>
+    <div class="container2">
+
+        <label>Informe o nome do detento: </label><input type="text" name="name" id="name" autocomplete="off"><br>
+        <label>Informe o CPF do detento: </label><input type="number" name="cpf" id="cpf" autocomplete="off"><br>
+        <label>Informe o RG do detento: </label><input type="text" name="rg" id="rg" autocomplete="off"><br>
+        <br>
+        <div class="divArtigos">
+            <p>Artigos: <b id="TotalArtigos"></b></p>
+        </div>
+        <br>
+        <div class="meses">
+            <p>Meses: <b id="meses"></b></p>
+        </div>
+        <br>
+        <div class="multa">
+            <p>Multa: <b>R$ <b id="multa"></b></b></p>
+        </div>
+        <!-- <br>
+        <div class="fianca">
+            <p>Fiança: <b>R$ <b id="fianca"></b></b></p>
+        </div> -->
+        <button onclick="clean()" class="clean"><strong>LIMPAR</strong></button>
+        <button onclick="primario()" class="primary"><strong>RÉU PRIMÁRIO</strong></button>
+        <button onclick="colaborate()" class="colaborate"><strong>COLABORAÇÃO</strong></button>
+        <br>
+
+        <button onclick="finalizar()" class="end"><strong>FINALIZAR</strong></button>
+
+        <br>
+        <div id="obs">
+            <strong>Observações:</strong>
+            <ol>
+                <li>Pena máxima é de 60 Meses.</li>
+                <li>Qualquer funcionário público em exercício de função pode dar voz de prisão.</li>
+                <li>Não é necessário um delegado em plantão para a fiança ser arbitrada (porém é necessário um Policial Civil).</li>
+                <li>Réu primario tem 25% de redução de pena - na presença do advogado de 30% - 50%.</li>
+                <li>Caso o detido esteja colaborando, pode ser diminuido 10% da pena.</li>
+            </ol>
+            <br>
+            <p><strong>Desenvolvido por:</strong> ABCD RolePlay</p>
+            <a href="https://discord.gg/ErgdfvxhvV" target="_blank"><img src="./src/discordIcon.png" alt="" class="discordIcon"></a>
+        </div>
+    </div>
+    <!-- <footer>
+        <p><strong>Desenvolvido por:</strong> ABCD RolePlay</p>
+    </footer> -->
+</body>
+</html>
